@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="data.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <!-- left -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <a href="login.html"><img src="resource/logo.png" class="logo"></a>
+                    <h2>Admin</h2>
+                </div>
+                <div class="close" id="closeBtn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <a href="dashboard.html"><span class="material-symbols-sharp">dashboard</span><h3>Dashboard</h3></a>
+                <a href="listCust.html" class="active"><span class="material-symbols-sharp">group</span><h3>Customer Service</h3></a>
+                <a href="view.html"><span class="material-symbols-sharp">inventory</span></span><h3>View Product</h3></a>
+                <a href="create.html"><span class="material-symbols-sharp">add</span><h3>Add Product</h3></a>
+                <a href="update.html"><span class="material-symbols-sharp">edit_note</span><h3>Edit Product</h3></a>
+                <a href="home.html"><span class="material-symbols-sharp">exit_to_app</span></span><h3>Logout</h3></a>
+            </div>
+        </aside>
+
+        <!-- middle -->
+        <main>
+
+            <div class="wrapper">
+                <div class="header">
+                  <div class="title">
+                    Customer Service Inbox
+                  </div>
+              
+                  <div class="search_box">
+                    <input type="text" id="search_input" placeholder="Search name">
+                  </div>
+                </div>
+              
+                <div class="table_wrap">
+                  <div class="table_header">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>NAME</span>
+                          </div>
+                          <div class="phone">
+                            <span>PHONE</span>
+                          </div>
+                          <div class="issue">
+                            <span>ISSUE</span>
+                          </div>
+                          <div class="status">
+                            <span>STATUS</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="table_body">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Alex</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 111 222 333</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                          </div>
+                          <div class="status">
+                            <span class="open">Open</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Max Johnson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+                          </div>
+                          <div class="status">
+                            <span class="reopened">Reopened</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>scarlett johansson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 341 242 336</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor.</span>
+                          </div>
+                          <div class="status">
+                            <span class="fixed">Fixed</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Rosey</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet consectetur.</span>
+                          </div>
+                          <div class="status">
+                            <span class="closed">Closed</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>John</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum.</span>
+                          </div>
+                          <div class="status">
+                            <span class="hold">Hold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Max Johnson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+                          </div>
+                          <div class="status">
+                            <span class="open">open</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Sarah Glenn</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 111 222 333</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                          </div>
+                          <div class="status">
+                            <span class="open">Open</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Hayley Matthews</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit.</span>
+                          </div>
+                          <div class="status">
+                            <span class="canceled">Canceled</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Sarah Glenn</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 111 222 333</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                          </div>
+                          <div class="status">
+                            <span class="open">Open</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>John</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum.</span>
+                          </div>
+                          <div class="status">
+                            <span class="hold">Hold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Kate Cross</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 341 242 336</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor.</span>
+                          </div>
+                          <div class="status">
+                            <span class="fixed">Fixed</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Jake Lehmann</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet consectetur.</span>
+                          </div>
+                          <div class="status">
+                            <span class="closed">Closed</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Richard Gleeson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum.</span>
+                          </div>
+                          <div class="status">
+                            <span class="hold">Hold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Oliver Robinson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+                          </div>
+                          <div class="status">
+                            <span class="reopened">Reopened</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Richard Gleeson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum.</span>
+                          </div>
+                          <div class="status">
+                            <span class="hold">Hold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Max Johnson</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+                          </div>
+                          <div class="status">
+                            <span class="closed">closed</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Sam Whiteman</span>
+                          </div>
+                          <div class="phone">
+                            <span>+1 331 442 436</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit.</span>
+                          </div>
+                          <div class="status">
+                            <span class="canceled">Canceled</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+              </div>
+        </main>
+
+        <!-- right -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menuBtn">
+                    <img src="resource/menu.png" alt="">
+                </button>
+                <div class="info">
+                    <h3>Hey, Bob</h3>
+                    <small>Administrator</small>
+                </div>
+                <div class="profile">  
+                    <span class="material-symbols-sharp">person</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>

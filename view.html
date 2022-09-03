@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="data.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <!-- left -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <a href="login.html"><img src="resource/logo.png" class="logo"></a>
+                    <h2>Admin</h2>
+                </div>
+                <div class="close" id="closeBtn">
+                    <span class="material-symbols-sharp">close</span>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <a href="dashboard.html"><span class="material-symbols-sharp">dashboard</span><h3>Dashboard</h3></a>
+                <a href="listCust.html"><span class="material-symbols-sharp">group</span><h3>Customer Service</h3></a>
+                <a href="view.html" class="active"><span class="material-symbols-sharp">inventory</span></span><h3>View Product</h3></a>
+                <a href="create.html"><span class="material-symbols-sharp">add</span><h3>Add Product</h3></a>
+                <a href="update.html"><span class="material-symbols-sharp">edit_note</span><h3>Edit Product</h3></a>
+                <a href="home.html"><span class="material-symbols-sharp">exit_to_app</span></span><h3>Logout</h3></a>
+            </div>
+        </aside>
+
+        <!-- middle -->
+        <main>
+
+            <!-- <div class="wrapper">
+                <div class="header">
+                  <div class="title">
+                    View Product
+                  </div>
+              
+                  <div class="search_box">
+                    <input type="text" id="search_input" placeholder="Search">
+                  </div>
+                </div>
+              
+                <div class="table_wrap">
+                  <div class="table_header">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Prouct Name</span>
+                          </div>
+                          <div class="phone">
+                            <span>Product Price</span>
+                          </div>
+                          <div class="issue">
+                            <span>Product Desc</span>
+                          </div>
+                          <div class="status">
+                            <span>Product Status</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="table_body">
+                    <ul>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>PS1 Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp100.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                          </div>
+                          <div class="status">
+                            <span class="sold">Sold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>PS2 Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp140.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+                          </div>
+                          <div class="status">
+                            <span class="sold">Sold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>XBox360 Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp200.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor.</span>
+                          </div>
+                          <div class="status">
+                            <span class="sold">Sold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Switch Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp200.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet consectetur.</span>
+                          </div>
+                          <div class="status">
+                            <span class="sold">Sold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>PS4 Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp300.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum.</span>
+                          </div>
+                          <div class="status">
+                            <span class="sold">Sold</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Camo Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp150.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+                          </div>
+                          <div class="status">
+                            <span class="pending">Pending</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>Steam Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp250.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                          </div>
+                          <div class="status">
+                            <span class="pending">Pending</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>PS5 Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp400.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit.</span>
+                          </div>
+                          <div class="status">
+                            <span class="out">Out</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item">
+                          <div class="name">
+                            <span>360 Controller</span>
+                          </div>
+                          <div class="phone">
+                            <span>Rp180.000</span>
+                          </div>
+                          <div class="issue">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                          </div>
+                          <div class="status">
+                            <span class="out">Out</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+              </div> -->
+        
+                <!-- TABLE -->
+            <div class="order">
+                <h1>View Product</h1>
+                <br>
+                <h3>Sort product by 'Name', 'Price', and 'Status'</h3>
+                <br><br>
+                <table id="sortTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)" id="thsort">Product Name</th>
+                            <th onclick="sortTable(1)" id="thsort">Product Price (Rp)</th>
+                            <th onclick="sortTable(2)" id="thsort">Product Status</th>
+                            <th>Product Desc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="trow">
+                            <td>Playstation1 Controller</td>
+                            <td>100.000</td>
+                            <td>Out</td>
+                            <td>The PlayStation controller is the first gamepad...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Playstation2 Controller</td>
+                            <td>140.000</td>
+                            <td>Sold</td>
+                            <td>The PlayStation2 controller is the second gamepad...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>XBox360 Controller</td>
+                            <td>200.000</td>
+                            <td>Pending</td>
+                            <td>The Xbox 360 controller is the primary game...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Switch Controller</td>
+                            <td>200.000</td>
+                            <td>Sold</td>
+                            <td>They consist of two individual units, each...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Playstation4 Controller</td>
+                            <td>300.000</td>
+                            <td>Pending</td>
+                            <td>Includes a whopping great trackpad on the...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Playstation1 Controller</td>
+                            <td>100.000</td>
+                            <td>Out</td>
+                            <td>The PlayStation controller is the first gamepad...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Playstation2 Controller</td>
+                            <td>140.000</td>
+                            <td>Sold</td>
+                            <td>The PlayStation2 controller is the second gamepad...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>XBox360 Controller</td>
+                            <td>200.000</td>
+                            <td>Pending</td>
+                            <td>The Xbox 360 controller is the primary game...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Switch Controller</td>
+                            <td>200.000</td>
+                            <td>Sold</td>
+                            <td>They consist of two individual units, each...</td>
+                        </tr>
+                        <tr id="trow">
+                            <td>Playstation4 Controller</td>
+                            <td>300.000</td>
+                            <td>Pending</td>
+                            <td>Includes a whopping great trackpad on the...</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <a href="view.html">Show All</a>     -->
+            </div>
+
+
+
+        </main>
+
+         <!-- right -->
+
+         <div class="right">
+            <div class="top">
+                <button id="menuBtn">
+                    <img src="resource/menu.png" alt="">
+                </button>
+                <div class="info">
+                    <h3>Hey, Bob</h3>
+                    <small>Administrator</small>
+                </div>
+                <div class="profile">  
+                    <span class="material-symbols-sharp">person</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>

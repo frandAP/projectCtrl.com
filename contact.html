@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<div class="container">
+    <div class="navbar">
+        <a href="login.html"><img src="resource/logo.png" class="logo"></a>
+        <nav>
+
+            <ul id="navList">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="ctrl.html" >Controller</a></li>
+                <li><a href="console.html" >Console</a></li>
+                <li><a href="contact.html" id="consoleMenu">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <img src="resource/menu.png" class="menu-icon" 
+        onclick="toggleMenu()">
+    </div>
+    
+
+    <div class="box">
+        <form name="myForm" action="home.html" onsubmit="return validateForm()">
+            <h1>Customer Service</h1>
+            <br>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Full Name" required>
+            <br><br>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0][8][0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="Must start with '08' and contains 12 digits" required>
+            <small>Format: 08xx-xxxx-xxxx</small><br><br>
+
+            <p>Please enter your message below:</p>
+            <textarea class="textbox" rows="10" cols="39"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    
+<script src="contact.js"></script>
+
+</body>
+
+</html>
